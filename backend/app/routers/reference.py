@@ -6,9 +6,9 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import distinct
 
-from app.models.db import get_db, Customer, Breaker, Accessory
-from app.models.schemas import CustomerOut, BreakerOut, AccessoryOut, RatingOptionsOut
-from app.data.fixed_lookups import (
+from models.db import get_db, Customer, Breaker, Accessory
+from models.schemas import CustomerOut, BreakerOut, AccessoryOut, RatingOptionsOut
+from data.fixed_lookups import (
     BUSBAR_THRESHOLD_AMPERAGE,
     cable_size_for_amperage,
     outgoing_busbar_for_amperage,

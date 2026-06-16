@@ -6,11 +6,11 @@ from io import BytesIO
 from datetime import date
 import re
 
-from app.models.db import get_db
-from app.models.schemas import QuotationRequest, QuotationResponse
-from app.services.quotation_engine import build_quotation, QuotationError
-from app.services.excel_generator import generate_bom_excel
-from app.services.docx_generator import generate_spec_docx
+from models.db import get_db
+from models.schemas import QuotationRequest, QuotationResponse
+from services.quotation_engine import build_quotation, QuotationError
+from services.excel_generator import generate_bom_excel
+from services.docx_generator import generate_spec_docx
 
 router = APIRouter(prefix="/api/quotation", tags=["quotation"])
 

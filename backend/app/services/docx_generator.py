@@ -10,10 +10,10 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-from app.models.db import Breaker
-from app.models.schemas import QuotationResponse, QuotationRequest
-from app.data.components import PANEL_DEFAULTS
-from app.data.fixed_lookups import (
+from models.db import Breaker
+from models.schemas import QuotationResponse, QuotationRequest
+from data.components import PANEL_DEFAULTS
+from data.fixed_lookups import (
     BUSBAR_THRESHOLD_AMPERAGE,
     cable_size_for_amperage,
     outgoing_busbar_for_amperage,

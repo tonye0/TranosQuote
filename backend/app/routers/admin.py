@@ -9,12 +9,12 @@ protects the rest of the admin/settings area.
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from app.models.db import get_db, Breaker, Accessory
-from app.models.schemas import (
+from models.db import get_db, Breaker, Accessory
+from models.schemas import (
     BreakerOut, BreakerCreate, BreakerUpdate,
     AccessoryOut, AccessoryCreate, AccessoryUpdate,
 )
-from app.routers.reference import _attach_supply_info
+from routers.reference import _attach_supply_info
 
 router = APIRouter(prefix="/api/admin", tags=["admin"])
 
