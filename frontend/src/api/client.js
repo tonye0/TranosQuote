@@ -1,4 +1,4 @@
-const BASE = '/api'
+const BASE = 'https://tranosquote.onrender.com'
 
 async function handle(res) {
   if (!res.ok) {
