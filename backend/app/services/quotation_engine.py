@@ -12,9 +12,9 @@ Given a QuotationRequest, builds a complete, ordered Bill of Materials (BOM):
 """
 from sqlalchemy.orm import Session
 
-from app.models.db import Breaker, Accessory, Customer
-from app.models.schemas import QuotationRequest, BOMLine, QuotationResponse, OptionalComponentSelection
-from app.data.fixed_lookups import (
+from models.db import Breaker, Accessory, Customer
+from models.schemas import QuotationRequest, BOMLine, QuotationResponse, OptionalComponentSelection
+from data.fixed_lookups import (
     BUSBAR_THRESHOLD_AMPERAGE,
     cable_size_for_amperage,
     outgoing_busbar_for_amperage,
