@@ -129,7 +129,7 @@ def init_db():
     db = SessionLocal()
     try:
         if db.query(Customer).count() == 0:
-            from app.data.components import CUSTOMERS
+            from data.components import CUSTOMERS
 
             for c in CUSTOMERS:
                 db.add(Customer(
