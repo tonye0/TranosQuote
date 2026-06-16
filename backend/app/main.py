@@ -9,8 +9,8 @@ Interactive docs available at /docs once running.
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.models.db import init_db
-from app.routers import reference, quotation, admin
+from models.db import init_db
+from routers import reference, quotation, admin
 
 app = FastAPI(
     title="AC Combiner Panel Quotation API",
