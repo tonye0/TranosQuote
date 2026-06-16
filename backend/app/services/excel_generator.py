@@ -6,7 +6,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-from app.models.schemas import QuotationResponse
+from models.schemas import QuotationResponse
 
 
 HEADER_FILL = PatternFill("solid", start_color="1F4E78", end_color="1F4E78")
