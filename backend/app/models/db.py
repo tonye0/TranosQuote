@@ -141,13 +141,13 @@ def init_db():
             db.commit()
 
         if db.query(Breaker).count() == 0:
-            from app.data.components import BREAKERS
+            from data.components import BREAKERS
             for b in BREAKERS:
                 db.add(Breaker(**b))
             db.commit()
 
         if db.query(Accessory).count() == 0:
-            from app.data.components import ACCESSORIES
+            from data.components import ACCESSORIES
             for a in ACCESSORIES:
                 db.add(Accessory(**a))
             db.commit()
